@@ -297,13 +297,13 @@ h2 {
 }
 
 .restaurant-info h3 {
-    font-size: 18px;
+    font-size: 30px;
     color: #333;
     margin: 0;
 }
 
 .restaurant-info p {
-    font-size: 14px;
+    font-size: 25px;
     color: #888;
     margin: 4px 0 10px;
 }
@@ -319,12 +319,12 @@ h2 {
     font-size: 14px;
     background-color: #4CAF50;
     color: #fff;
-    padding: 2px 6px;
+    padding: 4px 15px;
     border-radius: 4px;
 }
 
 .review-link {
-    font-size: 14px;
+    font-size: 20px;
     color: #4CAF50;
     text-decoration: none;
 }
@@ -345,15 +345,16 @@ h2 {
     align-items: center;
     border-top: 1px solid #eee;
     padding-top: 10px;
-    font-size: 14px;
+    font-size: 15px;
     color: #888;
 }
 
 .delivery-info img {
     width: 100px;
-    margin-right: 5px;
+    margin-right: 10px;
 }
 
 .delivery-fee {
     color: #e74c3c;
+    width: 100px;
 }
