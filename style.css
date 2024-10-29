@@ -284,3 +284,76 @@ h2 {
 .category-item:nth-child(4) { background-color: #98FB98; } /* Vegetables */
 .category-item:nth-child(5) { background-color: #FFA07A; } /* Pizza */
 
+/* Restaurant Card */
+.restaurant-card {
+    max-width: 1200px;
+    padding: 16px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    font-family: Arial, sans-serif;
+    margin: 20px auto;
+    
+}
+
+.restaurant-info h3 {
+    font-size: 18px;
+    color: #333;
+    margin: 0;
+}
+
+.restaurant-info p {
+    font-size: 14px;
+    color: #888;
+    margin: 4px 0 10px;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+.rating-score {
+    font-size: 14px;
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+
+.review-link {
+    font-size: 14px;
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+.super-partner {
+    background-color: #FF8C42;
+    color: #fff;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.delivery-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #eee;
+    padding-top: 10px;
+    font-size: 14px;
+    color: #888;
+}
+
+.delivery-info img {
+    width: 100px;
+    margin-right: 5px;
+}
+
+.delivery-fee {
+    color: #e74c3c;
+}
