@@ -231,15 +231,27 @@ h2 {
     color: #d9534f;
     border-bottom: 1px solid #d9534f;
 }
+/* Popular Category Section */
 .popular-category {
     padding: 20px;
     text-align: center;
+    background-color: #f5f5f5; /* Light background color for contrast */
+    border-radius: 10px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    max-width: 1200px; /* Keep it within main container width */
+}
+
+.popular-category h2 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 15px;
 }
 
 .category-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Flexible layout */
+    gap: 15px; /* Spacing between items */
     margin-top: 10px;
 }
 
@@ -253,6 +265,7 @@ h2 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    box-sizing: border-box;
 }
 
 .category-item h3 {
@@ -264,3 +277,10 @@ h2 {
     font-size: 16px;
     margin: 0;
 }
+
+/* Colors for each category item */
+.category-item:nth-child(1) { background-color: #FFC0CB; } /* Cheesecake */
+.category-item:nth-child(2) { background-color: #ADD8E6; } /* Ice Cream */
+.category-item:nth-child(3) { background-color: #FF6347; } /* Burger */
+.category-item:nth-child(4) { background-color: #98FB98; } /* Vegetables */
+.category-item:nth-child(5) { background-color: #FFA07A; } /* Pizza */
