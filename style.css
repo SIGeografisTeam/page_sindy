@@ -231,3 +231,36 @@ h2 {
     color: #d9534f;
     border-bottom: 1px solid #d9534f;
 }
+.popular-category {
+    padding: 20px;
+    text-align: center;
+}
+
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.category-item {
+    padding: 20px;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.category-item h3 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.category-item p {
+    font-size: 16px;
+    margin: 0;
+}
