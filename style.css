@@ -240,7 +240,8 @@ h2 {
     margin: 20px auto;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
     max-width: 1200px; /* Keep it within main container width */
-}
+    border-top: 1cap solid #ffffff;
+    }
 
 .popular-category h2 {
     font-size: 1.8em;
@@ -311,7 +312,7 @@ h2 {
 .rating {
     display: flex;
     align-items: center;
-    gap: 5px;
+    gap: 10px;
     margin-bottom: 10px;
 }
 
@@ -333,8 +334,8 @@ h2 {
     background-color: #FF8C42;
     color: #fff;
     padding: 4px 8px;
-    border-radius: 4px;
-    font-size: 12px;
+    border-radius: 3px;
+    font-size: 20px;
     display: inline-block;
     margin-bottom: 10px;
 }
@@ -343,10 +344,13 @@ h2 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-top: 1px solid #eee;
-    padding-top: 10px;
+    border-top: 0px solid #ffffff;
+    padding-top: 5px;
     font-size: 15px;
-    color: #888;
+    color: #524f4f;
+    
+    
+    
 }
 
 .delivery-info img {
