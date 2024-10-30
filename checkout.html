@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Pasakan Ambu</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="./bg/favicon.ico" type="image/x-icon">
+
+    <!-- Meta Tags for Open Graph -->
+    <meta property="og:title" content="Checkout Pasakan Ambu" />
+    <meta property="og:description" content="Selesaikan pesanan Anda di Pasakan Ambu." />
+    <meta property="og:image" content="./bg/gambar.jpg" />
+    <meta property="og:url" content="./checkout.html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Pasakan Ambu" />
+
+    <!-- Meta Tags for Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Checkout Pasakan Ambu">
+    <meta name="twitter:description" content="Selesaikan pesanan Anda di Pasakan Ambu.">
+    <meta name="twitter:image" content="./bg/gambar.jpg">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            text-align: center;
+        }
+
+        .banner-image {
+            width: 100%;
+            height: auto;
+        }
+
+        .main-container {
+            padding: 20px;
+        }
+
+        .checkout-form {
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        .checkout-form label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+
+        .checkout-form input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .total-container {
+            margin-top: 20px;
+        }
+
+        .checkout-button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            border-radius: 5px;
+        }
+
+        .checkout-button:hover {
+            background-color: #45a049;
+        }
+
+        .site-footer {
+            background-color: #f1f1f1;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .footer-logo-icon {
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <img src="./bg/banner.jpg" alt="Banner" class="banner-image">
+    </header>
+
+    <main class="main-container">
+        <h2>Checkout</h2>
+        <div class="checkout-form">
+            <label for="name">Nama:</label>
+            <input type="text" id="name" placeholder="Masukkan nama Anda" required>
+
+            <label for="whatsapp">Nomor WhatsApp:</label>
+            <input type="text" id="whatsapp" placeholder="Masukkan nomor WhatsApp" required>
+
+            <label for="address">Alamat:</label>
+            <input type="text" id="address" placeholder="Masukkan alamat Anda" required>
+
+            <div class="total-container">
+                <h2>Total: Rp <span id="totalPrice">0</span></h2>
+            </div>
+
+            <button id="confirmOrderButton" class="checkout-button">Konfirmasi Pesanan</button>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <div class="footer-logo-icon">jual.in.my.id</div>
+            </div>
+            <p>Disediakan oleh Platform Jualin</p>
+            <p>Isi Menu dan harga merupakan tanggung jawab tenant | <a href="#">Laporkan Penyalahgunaan</a></p>
+        </div>
+    </footer>
+
+    <script>
+        // Sample total price (this would typically be passed from the previous page)
+        const totalPrice = 35000; // Replace with the actual total price
+        document.getElementById('totalPrice').textContent = totalPrice;
+
+        // Confirm Order button click handler
+        document.getElementById('confirmOrderButton').addEventListener('click', () => {
+            const name = document.getElementById('name').value;
+            const whatsapp = document.getElementById('whatsapp').value;
+            const address = document.getElementById('address').value;
+
+            if (name && whatsapp && address) {
+                alert(`Pesanan Anda berhasil dikonfirmasi!\nNama: ${name}\nNomor WhatsApp: ${whatsapp}\nAlamat: ${address}\nTotal: Rp ${totalPrice}`);
+                // Here you can add functionality to send this data to your server or payment gateway
+            } else {
+                alert('Harap lengkapi semua informasi!');
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keranjang Belanja - Pasakan Ambu</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="./bg/favicon.ico" type="image/x-icon">
+
+    <!-- Meta Tags for Open Graph -->
+    <meta property="og:title" content="Keranjang Belanja Pasakan Ambu" />
+    <meta property="og:description" content="Lihat pesanan Anda di Pasakan Ambu." />
+    <meta property="og:image" content="./bg/gambar.jpg" />
+    <meta property="og:url" content="./cart.html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Pasakan Ambu" />
+
+    <!-- Meta Tags for Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Keranjang Belanja Pasakan Ambu">
+    <meta name="twitter:description" content="Lihat pesanan Anda di Pasakan Ambu.">
+    <meta name="twitter:image" content="./bg/gambar.jpg">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            text-align: center;
+        }
+
+        .banner-image {
+            width: 100%;
+            height: auto;
+        }
+
+        .main-container {
+            padding: 20px;
+        }
+
+        .restaurant-card {
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+
+        .popular-category {
+            margin: 20px 0;
+        }
+
+        .category-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 15px;
+        }
+
+        .category-item {
+            padding: 20px;
+            color: white;
+            text-align: center;
+            border-radius: 5px;
+        }
+
+        .total-container {
+            margin-top: 20px;
+        }
+
+        .checkout-button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            border-radius: 5px;
+        }
+
+        .checkout-button:hover {
+            background-color: #45a049;
+        }
+
+        .site-footer {
+            background-color: #f1f1f1;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .cart-items {
+            margin-bottom: 20px;
+        }
+
+        .cart-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .footer-logo-icon {
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <img src="./bg/banner.jpg" alt="Banner" class="banner-image">
+    </header>
+
+    <main class="main-container">
+        <h2>Keranjang Belanja</h2>
+        <div id="cartItems" class="cart-items">
+            <!-- Cart items will be populated by JavaScript -->
+        </div>
+        <div class="total-container">
+            <h2>Total: Rp <span id="totalPrice">0</span></h2>
+            <button id="checkoutButton" class="checkout-button">Checkout</button>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <div class="footer-logo-icon">jual.in.my.id</div>
+            </div>
+            <p>Disediakan oleh Platform Jualin</p>
+            <p>Isi Menu dan harga merupakan tanggung jawab tenant | <a href="#">Laporkan Penyalahgunaan</a></p>
+        </div>
+    </footer>
+
+    <script>
+        // Sample cart data (you would typically fetch this from a server or local storage)
+        const cartData = [
+            { name: 'Jengkol Rendang', price: 20000, quantity: 2 },
+            { name: 'Babat Serundeng', price: 15000, quantity: 1 },
+        ];
+
+        // Function to render cart items
+        function renderCartItems() {
+            const cartItemsContainer = document.getElementById('cartItems');
+            cartItemsContainer.innerHTML = ''; // Clear existing items
+            let total = 0;
+
+            cartData.forEach(item => {
+                const itemTotal = item.price * item.quantity;
+                total += itemTotal;
+
+                const itemElement = document.createElement('div');
+                itemElement.className = 'cart-item';
+                itemElement.innerHTML = `
+                    <span>${item.name} (x${item.quantity})</span>
+                    <span>Rp ${itemTotal}</span>
+                `;
+                cartItemsContainer.appendChild(itemElement);
+            });
+
+            document.getElementById('totalPrice').textContent = total;
+        }
+
+        // Checkout button click handler
+        document.getElementById('checkoutButton').addEventListener('click', () => {
+            alert('Checkout process initiated');
+            // You can add functionality here to redirect to a checkout page or handle payment
+        });
+
+        // Initial rendering of cart items
+        renderCartItems();
+    </script>
+</body>
+</html>
