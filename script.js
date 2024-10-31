@@ -139,3 +139,20 @@ function hitungTotal() {
 }
 
 // Fungsi lain tetap sama
+
+// Event listener untuk pencarian menu
+document.getElementById("searchInput").addEventListener("input", function () {
+    const searchValue = this.value.toLowerCase();
+    const menuItems = document.querySelectorAll(".menu-item");
+
+    menuItems.forEach((item) => {
+        const itemName = item.querySelector(".item-name").textContent.toLowerCase();
+        
+        // Tampilkan hanya menu yang cocok dengan kata kunci pencarian
+        if (itemName.includes(searchValue)) {
+            item.style.display = "block";
+        } else {
+            item.style.display = "none";
+        }
+    });
+});
