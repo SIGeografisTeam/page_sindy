@@ -409,3 +409,17 @@ h2 {
 .btn-view-all:hover {
     background-color: #e0a800; /* Warna saat di-hover */
 }
+
+.search-bar {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.search-bar input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
