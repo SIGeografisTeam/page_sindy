@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logic Coffee - Menu</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #2F4F4F;
+            color: white;
+            padding: 10px 20px;
+        }
+        .header-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: 600;
+        }
+        .search-bar input {
+            padding: 5px;
+            border: none;
+            border-radius: 4px;
+        }
+        .nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .nav a:hover {
+            text-decoration: underline;
+        }
+        .menu {
+            padding: 20px;
+            background-color: #F5F5F5;
+        }
+        .menu h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+        .menu-item {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            margin-bottom: 15px;
+        }
+        .menu-item h3 {
+            margin: 0;
+            font-size: 20px;
+        }
+        .price {
+            font-weight: bold;
+            color: #2F4F4F;
+        }
+        .footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #2F4F4F;
+            color: white;
+        }
+        .footer a {
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="header">
+        <div class="header-content">
+            <span class="logo">Logic Coffee</span>
+            <div class="search-bar">
+                <input type="text" placeholder="Cari di Logic Coffee...">
+            </div>
+            <nav class="nav">
+                <a href="index.html">Home</a>
+                <a href="menu.html">Menu</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact</a>
+                <a href="#" class="cart-icon">🛒</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Menu Section -->
+    <section class="menu">
+        <h2>Our Menu</h2>
+        <div class="menu-item">
+            <h3>Coffee</h3>
+            <p>Specialty brewed coffee from selected beans.</p>
+            <span class="price">$3.00</span>
+        </div>
+        <div class="menu-item">
+            <h3>Espresso</h3>
+            <p>Rich and bold espresso shot.</p>
+            <span class="price">$2.50</span>
+        </div>
+        <div class="menu-item">
+            <h3>Latte</h3>
+            <p>Creamy latte with a touch of vanilla.</p>
+            <span class="price">$4.00</span>
+        </div>
+        <!-- Add more menu items as needed -->
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p>&copy; 2024 Logic Coffee | All rights reserved</p>
+        <p>Follow Us: <a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="#">Twitter</a></p>
+    </footer>
+
+</body>
+</html>

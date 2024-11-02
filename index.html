@@ -3,134 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pasakan Ambu</title>
-    <link rel="stylesheet" href="style.css">
-    
-    <!-- Favicon -->
-    <link rel="icon" href=".bg/favicon.ico" type="image/x-icon">
-
-    <!-- Meta Tags for Open Graph -->
-    <meta property="og:title" content="Pasakan Ambu" />
-    <meta property="og:description" content="Nikmati berbagai pilihan menu makanan lezat di Pasakan Ambu. Mulai dari Jengkol Rendang, Babat Serundeng, dan masih banyak lagi!" />
-    <meta property="og:image" content=".bg/gambar.jpg" />
-    <meta property="og:url" content="./page" />
-    <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="Pasakan Ambu" />
-
-    <!-- Meta Tags for Twitter (Optional) -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Pasakan Ambu">
-    <meta name="twitter:description" content="Nikmati berbagai pilihan menu makanan lezat di Pasakan Ambu. Mulai dari Jengkol Rendang, Babat Serundeng, dan masih banyak lagi!">
-    <meta name="twitter:image" content="./pagebg/gambar.jpg">
+    <title>Logic Coffee - Feel the Aroma</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header class="header">
-        <img src="./bg/banner.jpg" alt="Banner" class="banner-image">
-    </header>
-    <div class="restaurant-card">
-        <div class="restaurant-info">
-            <h3>Masakan Ambu, Bandung Jl. Sariasih No.54, Sarijadi, Kec. Sukasari </h3>
-            <p>Masakan nusantara</p>
-        </div>
-        <div class="rating">
-            <span class="rating-score">4.9 ★</span>
-            <a href="#" class="review-link">Cek ulasan</a>
-        </div>
-        <div class="super-partner">
-            <span>Super Partner</span>
-        </div>
-        <div class="delivery-info">
-            <div class="delivery-time">
-                <img src="bg/delivery.png" alt="Delivery icon" />
-                <span>tiba 25-35 min</span>
-            </div>
-            <div class="delivery-fee">
-                <span>Biaya kirim 2rb</span>
-            </div>
-        </div>
-    </div>
-    
 
-    <!-- Popular Category Section -->
-    <section class="popular-category">
-        <h2>Popular Category</h2>
-        <div class="category-grid">
-            <div class="category-item" style="background-image: url('bg/sayur..jpg'); background-size: cover; background-position: center;">
-                <h3>03</h3>
-                <p>Sayur dan Tumisan</p>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="header-content">
+            <span class="logo">Logic Coffee</span>
+            <div class="search-bar">
+                <input type="text" placeholder="Cari di Logic Coffee...">
             </div>
-            <div class="category-item" style="background-image: url('bg/sambal.jpg'); background-size: cover; background-position: center;">
-                <h3>82</h3>
-                <p>Aneka Sambal</p>
-            </div>
-            <div class="category-item" style="background-image: url('bg/ayam.jpg'); background-size: cover; background-position: center;">
-                <h3>82</h3>
-                <p>Aneka Ayam</p>
-            </div>
-            <div class="category-item" style="background-image: url('bg/soto.jpg'); background-size: cover; background-position: center;">
-                <h3>12</h3>
-                <p>Soto dan Sup</p>
-            </div>
-            <div class="category-item" style="background-image: url('bg/ikan.jpg'); background-size: cover; background-position: center;">
-                <h3>12</h3>
-                <p>Aneka Ikan</p>
-            </div>
+            <nav class="nav">
+                <a href="index.html">Home</a>
+                <a href="/homepage/menu.html">Menu</a>
+                <a href="#">About Us</a>
+                <a href="#">Contact</a>
+                <a href="#" class="cart-icon">🛒</a>
+            </nav>
         </div>
-        <!-- Tombol View All Category -->
-        <div class="view-all-button">
-            <a href="category.html" class="btn-view-all">View All Category</a>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Logic Coffee</h1>
+            <p>Kopinya Mahasiswa</p>
+            <button class="order-btn">Order Now</button>
         </div>
     </section>
-    
-    
 
-    <main class="main-container">
-        <h2>Menu masakan Ambu</h2>
-        <div class="search-bar">
-            <input type="text" id="searchInput" placeholder="Cari menu...">
+    <!-- Categories Section -->
+    <section class="categories">
+        <div class="category">
+            <h3>Great Service</h3>
+            <p>Experience our quick and friendly service.</p>
         </div>
-        <div id="menuGrid" class="menu-grid">
-            <!-- Elemen menu akan diisi oleh JavaScript -->
-        </div>        
-        <div class="total-container">
-            <h2>Total: Rp <span id="totalPrice">0</span></h2>
-            <div class="payment-method">
-                <label for="paymentMethod">Pilih Metode Pembayaran:</label>
-                <select id="paymentMethod" name="paymentMethod">
-                    <option value="Transfer">Transfer</option>
-                    <option value="COD">COD</option>
-                </select>
+        <div class="category">
+            <h3>Delicious Coffee</h3>
+            <p>Handcrafted coffee for the best taste.</p>
+        </div>
+        <div class="category">
+            <h3>Best Beans</h3>
+            <p>Sourced from the finest farms.</p>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="about">
+        <div class="about-content">
+            <div class="about-text">
+                <h2>About Us</h2>
+                <p>Logic Coffee adalah tempat di mana cita rasa kopi terbaik bertemu dengan suasana yang nyaman. Kami berkomitmen untuk menyajikan kopi berkualitas tinggi yang diseduh dengan penuh perhatian dan cinta. Berlokasi di jantung kota, kami menyediakan tempat bagi mahasiswa dan pecinta kopi untuk menikmati waktu berkualitas sambil merasakan aroma kopi yang khas.</p>
+                <p>Dengan biji kopi yang dipilih langsung dari petani terbaik dan metode penyeduhan yang presisi, kami menjamin setiap cangkir kopi yang Anda nikmati akan menjadi pengalaman yang tak terlupakan.</p>
             </div>
-            <h3>Pesanan Anda:</h3>
-            <ul id="orderList"></ul>
-            <a id="whatsappLink" href="#" class="whatsapp-button" target="_blank">Kirim Pesanan via WhatsApp</a>
-        </div>
-    </main>
-
-    <!-- Modal untuk input nama, nomor WhatsApp, dan alamat -->
-    <div id="userModal" class="modal">
-        <div class="modal-content">
-            <h2>Masukkan Informasi Anda</h2>
-            <label for="name">Nama:</label>
-            <input type="text" id="name" placeholder="Masukkan nama Anda">
-            <label for="whatsapp">Nomor WhatsApp:</label>
-            <input type="text" id="whatsapp" placeholder="Masukkan nomor WhatsApp">
-            <label for="address">Alamat:</label>
-            <input type="text" id="address" placeholder="Masukkan alamat Anda">
-            <button id="buttonsimpaninfouser">Simpan</button>
-        </div>
-    </div>
-
-    <footer class="site-footer">
-        <div class="footer-content">
-            <div class="footer-logo">
-                <div class="footer-logo-icon">jual.in.my.id</div>
+            <div class="about-image">
+                <img src="bg/bg2.jpg" alt="Logic Coffee">
             </div>
-            <p>Disediakan oleh Platform Jualin</p>
-            <p>Isi Menu dan harga merupakan tangung jawab tenant | <a href="#">Laporkan Penyalahgunaan</a></p>
         </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p>&copy; 2024 Logic Coffee | All rights reserved</p>
+        <p>Follow Us: <a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="#">Twitter</a></p>
     </footer>
 
-    <script src="script.js" type="module"></script>
 </body>
 </html>
